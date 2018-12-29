@@ -1,0 +1,5 @@
+// We include custom fonts via webfontloader (see: `_src/js/Services/WebFontService/`)
+// We have a seperate scss file that expects the addition of font specific classes added to the html element (see: `_src/scss/fonts.scss/`)
+.c-example__text {
+    font-family: 'Roboto', sans-serif;
+}

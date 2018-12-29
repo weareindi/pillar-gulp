@@ -1,0 +1,19 @@
+{
+    "name": "weareindi/pillar-gulp",
+    "description": "Gulp; prepared for weareindi/pillar",
+    "keywords": ["pattern library", "pattern system", "twig", "atomic", "gulp"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/weareindi/pillar/issues",
+        "wiki": "https://github.com/weareindi/pillar/wiki",
+        "source": "https://github.com/weareindi/pillar/releases"
+    },
+    "type": "project",
+    "authors": [{
+        "name": "Laurence Archer",
+        "email": "laurence@weareindi.co.uk",
+        "homepage": "https://weareindi.co.uk/",
+        "role": "Developer"
+    }],
+    "minimum-stability": "stable"
+}
