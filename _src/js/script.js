@@ -1,9 +1,18 @@
+// Functions
+import ScriptLoaderFunction from './Functions/ScriptLoaderFunction/ScriptLoaderFunction';
+
 // Services
-import {PageTopService} from './Services/PageTopService/PageTopService';
-import {ScrollToAnchorService} from './Services/ScrollToAnchorService/ScrollToAnchorService';
 import {WebFontService} from './Services/WebFontService/WebFontService';
+import {ViewportHeightService} from './Services/ViewportHeightService/ViewportHeightService';
 
 // Run
-new PageTopService();
-new ScrollToAnchorService();
-new WebFontService();
+Promise.all([
+    new WebFontService().register(),
+    new ViewportHeightService().register()
+])
+.then(() => {
+    return ScriptLoaderFunction(`${window.themeDir}/_assets/js/additional.js`);
+})
+.catch((error) => {
+    console.error(error);
+});

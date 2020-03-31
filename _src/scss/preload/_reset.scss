@@ -100,14 +100,17 @@ button {
 
 html {
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 body {
-    overflow-y: scroll;
-    height: 100%;
+    overflow: auto;
     min-height: 100%;
-    line-height: 1;
     font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    text-rendering: optimizeLegibility;
 }
 
 article,
