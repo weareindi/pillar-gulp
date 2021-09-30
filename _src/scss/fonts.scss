@@ -2,7 +2,29 @@
 
 // Notes: WebFontLoader (_src/js/Services/WebFontService) add classes to the html tag as it loads each required fontface.
 // We use the *-active state of the font to initalise the switch to the custom font.
-.wf-roboto-n4-active {
+.font--opensans {
+    // set globals
+    label,
+    input,
+    textarea,
+    select,
+    button,
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    figcaption,
+    cite,
+    a,
+    span,
+    *:before,
+    *:after {
+        font-family: 'Open Sans', sans-serif;
+    }
+
     // We don't expect custom fonts to care about the cascade so we can look through the pattern directory as a whole
-    @import '../../library/patterns/**/_font--roboto.scss';
+    // @import '../../library/patterns/**/_font--indi.scss';
 }

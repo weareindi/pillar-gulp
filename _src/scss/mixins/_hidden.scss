@@ -8,12 +8,12 @@
         top: 0;
         left: 0;
         overflow: hidden;
-        width: 0;
-        height: 0;
+        width: 1px;
+        height: 1px;
     }
 
     // Reset any previously hidden properties
-    @elseif $process == remove {
+    @else if $process == remove {
         position: static;
         display: block;
         display: initial;

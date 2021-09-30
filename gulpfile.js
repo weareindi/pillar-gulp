@@ -9,17 +9,19 @@ const forwardRef = require('undertaker-forward-reference');
 
 const plugins = {
     autoprefixer: require('autoprefixer'),
-    babelify: require('babelify'),
-    browserify: require('browserify'),
+    babel: require('gulp-babel'),
     browsersync: require('browser-sync').create(),
     cssnano: require('cssnano'),
+    del: require('del'),
+    glob: require('glob'),
     log: require('fancy-log'),
     postcss: require('gulp-postcss'),
-    sass: require('gulp-sass'),
+    sass: require('gulp-sass')(require('sass')),
     sassGlobbing: require('node-sass-globbing'),
     terser: require('gulp-terser'),
     vinylBuffer: require('vinyl-buffer'),
-    vinylSource: require('vinyl-source-stream')
+    vinylSource: require('vinyl-source-stream'),
+    webpack: require('webpack-stream')
 };
 
 gulp.registry(forwardRef());

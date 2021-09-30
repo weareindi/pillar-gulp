@@ -7,6 +7,7 @@
         "formatter": "stylish"
     },
     "rules": {
+        "no-invalid-position-at-import-rule": null,
         "block-no-empty": null,
         "at-rule-no-unknown": null,
         "max-empty-lines": 2,

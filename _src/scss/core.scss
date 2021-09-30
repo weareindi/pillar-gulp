@@ -1,3 +1,8 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+
+// Uses
+@use "sass:math";
+
 // Functions
 @import 'functions/pxtoem';
 
@@ -6,6 +11,8 @@
 @import 'mixins/hidden';
 @import 'mixins/impheight';
 @import 'mixins/pngsvg';
+@import 'mixins/placeholder';
+@import 'mixins/removehighlight';
 
 // The core styles are just as it sounds, These core styles work hand in hand with the preload styles.
 // We're catering for the same level of browser compatability as the preload styles define, only now we're displaying images.

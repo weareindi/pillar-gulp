@@ -12,7 +12,7 @@ If not, please visit: https://github.com/weareindi/pillar
 
 ### Via Terminal (using wget and tar)
 Execute the following one liner from your project root to download and extract the Pillar Gulp starter:   
-`wget -qO- https://github.com/weareindi/pillar-gulp/archive/1.0.4.tar.gz | tar -xvz -C . && cp -Rvn pillar-gulp-1.0.4/* ./ && rm -rf pillar-gulp-1.0.4`
+`wget -qO- https://github.com/weareindi/pillar-gulp/archive/1.0.6.tar.gz | tar -xvz -C . && cp -Rvn pillar-gulp-1.0.6/* ./ && rm -rf pillar-gulp-1.0.6`
 
 ### Manually
 Download and merge contents of this gulp starter into your Pillar project root.

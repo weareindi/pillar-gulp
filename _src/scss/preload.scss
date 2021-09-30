@@ -1,9 +1,18 @@
+/* stylelint-disable no-invalid-position-at-import-rule */
+
+// Uses
+@use "sass:math";
+
 // Functions
 @import 'functions/pxtoem';
 
 // Mixins
 @import 'mixins/clearfix';
 @import 'mixins/hidden';
+@import 'mixins/impheight';
+@import 'mixins/pngsvg';
+@import 'mixins/placeholder';
+@import 'mixins/removehighlight';
 
 // Preload
 @import 'preload/reset';

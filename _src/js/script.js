@@ -1,5 +1,5 @@
 // Functions
-import ScriptLoaderFunction from './Functions/ScriptLoaderFunction/ScriptLoaderFunction';
+import fetchInject from 'fetch-inject';
 
 // Services
 import {WebFontService} from './Services/WebFontService/WebFontService';
@@ -10,9 +10,11 @@ Promise.all([
     new WebFontService().register(),
     new ViewportHeightService().register()
 ])
-.then(() => {
-    return ScriptLoaderFunction(`${window.themeDir}/_assets/js/additional.js`);
-})
-.catch((error) => {
-    console.error(error);
-});
+    .then(() => {
+        return fetchInject([
+            `${window.themeDir}/_assets/js/additional.js?v=${window.themeVersion}`
+        ]);
+    })
+    .catch((error) => {
+        console.error(error);
+    });
